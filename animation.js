@@ -6,10 +6,10 @@ var ystep = 1;
 var id = setInterval(frame, 5);
 
 function frame() {
-    if (xpos > 200 || xpos < 0) {
+    if (xpos > 500 || xpos < 0) {
         xstep = -xstep;
     }
-    if (ypos > 200 || ypos < 0) {
+    if (ypos > 500 || ypos < 0) {
         ystep = -ystep;
     }
 
