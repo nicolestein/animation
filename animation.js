@@ -18,3 +18,20 @@ function frame() {
     box.style.top = ypos + 'px';
     box.style.left = xpos + 'px';
 }
+window.addEventListener("keypress", changeThingColor);
+
+function changeThingColor(event) {
+    if (event.key === "b") {
+        element.style.background = "blue";
+    } else if (event.key === "o") {
+        element.style.background = "orange";
+    } else if (event.key === "g") {
+        element.style.background = "green";
+    }
+}
+window.addEventListener("click", changeAnimationSpeed);
+
+function changeAnimationSpeed(MouseEvent) {
+    element.style.animationDuration = .5 + "s";
+
+}
